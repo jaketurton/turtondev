@@ -1,0 +1,86 @@
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #111;
+  line-height: 1.4;
+  box-sizing: border-box;
+  background-color: #222; }
+
+.container-full {
+  min-height: 100%;
+  padding: 2em;
+  box-sizing: border-box; }
+  .container-full.intro {
+    background-color: #fff;
+    color: #111; }
+  .container-full.main {
+    background: #222;
+    color: #fff; }
+
+.container {
+  max-width: 520px; }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 680px;
+      margin: 0 auto; } }
+
+.header-1 {
+  font-weight: 900;
+  font-size: 2.055em; }
+
+.header-2 {
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: 0.2em; }
+
+i svg {
+  margin-bottom: -5px; }
+
+.link {
+  font-weight: 900;
+  color: #000; }
+  .link:hover, .link:focus {
+    color: #000; }
+
+.paragraph-1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 3em;
+  max-width: 600px; }
+
+.previous-roles {
+  margin-top: 4em; }
+  .previous-roles .role {
+    margin-top: 1.5em; }
+  .previous-roles .role img {
+    height: auto;
+    width: 210px; }
+  .previous-roles .role div {
+    border: dotted 2px;
+    padding: 1em;
+    width: 175px;
+    text-align: center; }
+    .previous-roles .role div:hover {
+      background: #111;
+      color: #fff;
+      cursor: pointer; }
+
+.previous-work .container-work {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  @media (min-width: 520px) {
+    .previous-work .container-work {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 520px) {
+    .previous-work .container-work a {
+      width: 30%; } }
+  .previous-work .container-work img {
+    max-width: 100%;
+    margin-top: 2em; }
+
+
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */
