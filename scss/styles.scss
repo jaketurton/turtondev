@@ -138,9 +138,13 @@ i svg {
 .arrow-container {
     width: 100%;
     position: absolute;
-    bottom: 5em;
     left: 0;
     height: 50px;
+    bottom: 2.5em;
+
+    @media (min-width: 768px) {
+        bottom: 5em;
+    }
 }
 
 .down-arrow {
