@@ -129,10 +129,7 @@ body.addEventListener('click', function (e) {
   }
 
   if (e.target == arrow) {
-    portfolio.scrollIntoView({
-      behavior: 'smooth',
-      block: 'end'
-    });
+    portfolio.scrollIntoView();
   }
 });
 },{}],"../../Users/Jake/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -163,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "32714" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "32887" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -10,6 +10,6 @@ body.addEventListener('click', e => {
     }
 
     if (e.target == arrow) {
-        portfolio.scrollIntoView({ behavior: 'smooth', block: 'end'});
+        portfolio.scrollIntoView();
     }
 });
