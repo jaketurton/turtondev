@@ -16,7 +16,5 @@
     "cssnano": "^4.1.10",
     "sass": "^1.23.3"
   },
-  "dependencies": {
-    "zenscroll": "^4.0.2"
-  }
+  "dependencies": {}
 }
