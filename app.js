@@ -6,10 +6,10 @@ body.addEventListener('click', e => {
     e.preventDefault();
 
     if (e.target.nodeName == "A") {
-        window.location.href = e.target.href;
+        window.open(e.target.href, '_blank');
     }
 
     if (e.target == arrow) {
-        portfolio.scrollIntoView();
+        portfolio.scrollIntoView({ behavior: 'smooth', block: 'end'});
     }
 });

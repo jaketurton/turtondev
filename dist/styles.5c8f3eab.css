@@ -10,7 +10,8 @@ body {
   background-color: #222;
 }
 
-button > * {
+button > *,
+img {
   pointer-events: none;
 }
 
@@ -25,7 +26,7 @@ button > * {
   color: #111;
 }
 .container-full.main {
-  background: #222;
+  background: #111;
   color: #fff;
 }
 
@@ -56,28 +57,28 @@ i svg {
 
 .link {
   font-weight: 900;
-  color: #000;
+  color: #111;
 }
 .link:hover, .link:focus {
-  color: #000;
+  color: #111;
 }
 
 .paragraph-1 {
   font-size: 1.5em;
   font-weight: normal;
-  margin-top: 3em;
+  margin-top: 2.5em;
   max-width: 600px;
 }
 
 .previous-roles {
-  margin-top: 4em;
+  margin-top: 3.5em;
 }
 .previous-roles .role {
   margin-top: 1.5em;
 }
 .previous-roles .role img {
   height: auto;
-  width: 210px;
+  width: 190px;
 }
 .previous-roles .role div {
   border: dotted 2px;
@@ -100,12 +101,13 @@ i svg {
   .previous-work .container-work {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 @media (min-width: 520px) {
   .previous-work .container-work a {
     width: 30%;
+    margin-right: 2em;
   }
 }
 .previous-work .container-work img {
@@ -127,9 +129,14 @@ i svg {
 .arrow-container {
   width: 100%;
   position: absolute;
-  bottom: 5em;
   left: 0;
   height: 50px;
+  bottom: 2.5em;
+}
+@media (min-width: 768px) {
+  .arrow-container {
+    bottom: 5em;
+  }
 }
 
 .down-arrow {
@@ -145,7 +152,7 @@ i svg {
   margin: 1em auto 0 auto;
 }
 .down-arrow svg path {
-  stroke: #333;
+  stroke: #111;
   stroke-width: 8;
   fill: transparent;
 }

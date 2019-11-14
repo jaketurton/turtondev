@@ -1,3 +1,5 @@
+$almostBlack: #111;
+
 html {
     scroll-behavior: smooth 
 }
@@ -10,7 +12,8 @@ body {
     background-color: #222;
 }
 
-button > * {
+button > *
+, img {
   pointer-events: none;
 }
 
@@ -22,11 +25,11 @@ button > * {
 
     &.intro {
         background: #fff;
-        color: #111;
+        color: $almostBlack;
     }
 
     &.main {
-        background: #222;
+        background: $almostBlack;
         color: #fff;
     }
 }
@@ -57,11 +60,11 @@ i svg {
 
 .link {
     font-weight: 900;
-    color: #000;
+    color: $almostBlack;
 
     &:hover,
     &:focus {
-        color: #000;
+        color: $almostBlack;
     }
 }
 
@@ -91,7 +94,7 @@ i svg {
         text-align: center;
 
         &:hover {
-            background: #111;
+            background: $almostBlack;
             color: #fff;
             cursor: pointer;
         }
@@ -107,12 +110,13 @@ i svg {
         @media (min-width: 520px) {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
 
         a {
             @media (min-width: 520px) {
                 width: 30%;
+                margin-right: 2em;
             }
         }
 
@@ -160,7 +164,7 @@ i svg {
     margin: 1em auto 0 auto;
 
     svg path {
-        stroke: #333;
+        stroke: $almostBlack;
         stroke-width: 8;
         fill: transparent;
     }
